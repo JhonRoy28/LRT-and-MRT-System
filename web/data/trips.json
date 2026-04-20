@@ -1,0 +1,155 @@
+[
+  {
+    "id": "trip_1776623582093",
+    "createdAt": "2026-04-19T18:33:02.093Z",
+    "passengerName": "yow",
+    "baseTotal": 45,
+    "paidTotal": 30,
+    "discountTotal": 15,
+    "rides": [
+      {
+        "line": "LRT-1",
+        "from": "Baclaran",
+        "to": "Blumentritt",
+        "stations": 13,
+        "discountType": 2,
+        "baseFare": 30,
+        "finalFare": 15
+      },
+      {
+        "line": "LRT-1",
+        "from": "Baclaran",
+        "to": "EDSA",
+        "stations": 1,
+        "discountType": 1,
+        "baseFare": 15,
+        "finalFare": 15
+      }
+    ],
+    "useCard": true,
+    "startBalance": 500,
+    "endBalance": 470,
+    "topupTotal": 0
+  },
+  {
+    "id": "trip_1776623560116",
+    "createdAt": "2026-04-19T18:32:40.116Z",
+    "passengerName": "yow",
+    "baseTotal": 15,
+    "paidTotal": 7.5,
+    "discountTotal": 7.5,
+    "rides": [
+      {
+        "line": "LRT-1",
+        "from": "Baclaran",
+        "to": "EDSA",
+        "stations": 1,
+        "discountType": 2,
+        "baseFare": 15,
+        "finalFare": 7.5
+      }
+    ],
+    "useCard": true,
+    "startBalance": 500,
+    "endBalance": 492.5,
+    "topupTotal": 0
+  },
+  {
+    "id": "trip_1776623544303",
+    "createdAt": "2026-04-19T18:32:24.303Z",
+    "passengerName": "yow",
+    "baseTotal": 15,
+    "paidTotal": 15,
+    "discountTotal": 0,
+    "rides": [
+      {
+        "line": "LRT-1",
+        "from": "Baclaran",
+        "to": "EDSA",
+        "stations": 1,
+        "discountType": 1,
+        "baseFare": 15,
+        "finalFare": 15
+      }
+    ],
+    "useCard": true,
+    "startBalance": 500,
+    "endBalance": 485,
+    "topupTotal": 0
+  },
+  {
+    "id": "trip_1776622449334",
+    "createdAt": "2026-04-19T18:14:09.334Z",
+    "passengerName": "roy",
+    "baseTotal": 35,
+    "paidTotal": 35,
+    "discountTotal": 0,
+    "rides": [
+      {
+        "line": "LRT-1",
+        "from": "Carriedo",
+        "to": "Doroteo Jose",
+        "stations": 1,
+        "discountType": 1,
+        "baseFare": 15,
+        "finalFare": 15
+      },
+      {
+        "line": "LRT-2",
+        "from": "Recto",
+        "to": "Cubao",
+        "stations": 7,
+        "discountType": 1,
+        "baseFare": 20,
+        "finalFare": 20
+      }
+    ],
+    "useCard": true,
+    "startBalance": 100,
+    "endBalance": 65,
+    "topupTotal": 0
+  },
+  {
+    "id": "trip_1776622403331",
+    "createdAt": "2026-04-19T18:13:23.331Z",
+    "passengerName": "roy",
+    "baseTotal": 15,
+    "paidTotal": 15,
+    "discountTotal": 0,
+    "rides": [
+      {
+        "line": "LRT-1",
+        "from": "Baclaran",
+        "to": "EDSA",
+        "stations": 1,
+        "discountType": 1,
+        "baseFare": 15,
+        "finalFare": 15
+      }
+    ],
+    "useCard": true,
+    "startBalance": 100,
+    "endBalance": 85,
+    "topupTotal": 0
+  },
+  {
+    "id": "trip_1776622391795",
+    "createdAt": "2026-04-19T18:13:11.795Z",
+    "passengerName": "roy",
+    "baseTotal": 15,
+    "paidTotal": 15,
+    "discountTotal": 0,
+    "rides": [
+      {
+        "line": "LRT-1",
+        "from": "Baclaran",
+        "to": "EDSA",
+        "stations": 1,
+        "discountType": 1,
+        "baseFare": 15,
+        "finalFare": 15
+      }
+    ],
+    "useCard": false
+  }
+]

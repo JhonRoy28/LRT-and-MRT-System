@@ -1,0 +1,15 @@
+Train Fare Receipt
+Passenger: r
+Trip: 1
+
+Ride | Line  | Discount           | Base Fare | Final Fare | Detail
+-----+-------+--------------------+-----------+-----------+-------------------------
+   1 | LRT-2 | Student (50% off)  | Php  20.00 | Php  10.00 | Legarda -> Cubao (6 gaps)
+
+Trip total before discounts: Php 20.00
+Trip total after discounts: Php 10.00
+Trip discount: Php 10.00
+
+Card starting balance: Php 50.00
+Card ending balance:   Php 40.00
+Total top-up:          Php 0.00

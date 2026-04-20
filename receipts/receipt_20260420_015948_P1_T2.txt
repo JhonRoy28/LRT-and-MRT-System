@@ -1,0 +1,15 @@
+Train Fare Receipt
+Passenger: yor
+Trip: 2
+
+Ride | Line  | Discount           | Base Fare | Final Fare | Detail
+-----+-------+--------------------+-----------+-----------+-------------------------
+   1 | LRT-1 | None               | Php  15.00 | Php  15.00 | Doroteo Jose -> Bambang (1 gaps)
+
+Trip total before discounts: Php 15.00
+Trip total after discounts: Php 15.00
+Trip discount: Php 0.00
+
+Card starting balance: Php 50.00
+Card ending balance:   Php 25.00
+Total top-up:          Php 0.00

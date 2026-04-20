@@ -1,0 +1,15 @@
+Train Fare Receipt
+Passenger: e
+Trip: 1
+
+Ride | Line  | Discount           | Base Fare | Final Fare | Detail
+-----+-------+--------------------+-----------+-----------+-------------------------
+   1 | LRT-2 | Student (50% off)  | Php  15.00 | Php   7.50 | Distance 1.00 km
+
+Trip total before discounts: Php 15.00
+Trip total after discounts: Php 7.50
+Trip discount: Php 7.50
+
+Card starting balance: Php 50.00
+Card ending balance:   Php 42.50
+Total top-up:          Php 0.00

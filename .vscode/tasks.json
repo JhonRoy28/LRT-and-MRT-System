@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build C (MSYS2 UCRT64)",
+			"type": "shell",
+			"command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+			"options": {
+				"env": {
+					"PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+				}
+			},
+			"args": [
+				"main.c",
+				"-o",
+				"main.exe"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}

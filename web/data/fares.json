@@ -1,0 +1,28 @@
+{
+  "LRT1": {
+    "shortMax": 5,
+    "mediumMax": 10,
+    "shortFare": 15,
+    "mediumFare": 20,
+    "longFare": 30
+  },
+  "LRT2": {
+    "shortMax": 5,
+    "mediumMax": 10,
+    "shortFare": 15,
+    "mediumFare": 20,
+    "longFare": 30
+  },
+  "MRT3": {
+    "range1": 3,
+    "range2": 6,
+    "range3": 9,
+    "range4": 12,
+    "range5": 13,
+    "fare1": 13,
+    "fare2": 16,
+    "fare3": 20,
+    "fare4": 24,
+    "fare5": 28
+  }
+}

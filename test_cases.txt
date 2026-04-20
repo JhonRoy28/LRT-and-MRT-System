@@ -1,0 +1,43 @@
+Manual test cases
+
+1) Single passenger, cash
+- Passenger count: 1
+- Name: Ana
+- Use card: N
+- Trip: 1 ride
+- Line: LRT-1
+- From: Baclaran
+- To: EDSA
+- Discount: None
+Expected: LRT-1 short fare, discount 0
+
+2) Single passenger, stored-value card
+- Passenger count: 1
+- Name: Ben
+- Use card: Y
+- Start balance: 10
+- Trip: 1 ride
+- Line: MRT-3
+- From: North Ave
+- To: Cubao
+- Discount: Student
+Expected: top-up requested, card balance decreases by discounted fare
+
+3) Multi-leg trip with transfer
+- Passenger count: 1
+- Name: Carla
+- Use card: N
+- Trip: 2 rides
+- Ride 1: LRT-2, 8.5 km, PWD
+- Ride 2: MRT-3, Shaw -> Ayala, None
+Expected: two separate fares, trip total sum
+
+4) Multiple passengers
+- Passenger count: 2
+- Passenger 1: cash, 1 trip, 1 ride
+- Passenger 2: card, 1 trip, 2 rides
+Expected: per-passenger summary and overall summary totals
+
+5) Station name search
+- Use lowercase or partial names (e.g., "bac", "edsa", "ayala")
+Expected: correct station match or list of multiple matches

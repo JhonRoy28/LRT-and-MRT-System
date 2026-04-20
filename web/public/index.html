@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Train Fare Ticketing Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hero">
+        <div>
+          <p class="badge">Metro Fare Lab</p>
+          <h1>Train Fare Ticketing</h1>
+          <p class="subtitle">Build trips, validate transfers, and track totals in one live dashboard.</p>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <p class="label">Status</p>
+            <p class="value" id="server-status">Connecting...</p>
+          </div>
+          <div>
+            <p class="label">Trips Today</p>
+            <p class="value" id="trip-count">0</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="panel">
+          <h2>Create Trip</h2>
+          <form id="trip-form" class="form">
+            <label>
+              Passenger name
+              <input type="text" id="passenger-name" placeholder="e.g. Jhon" />
+            </label>
+
+            <div class="row">
+              <label class="toggle">
+                <input type="checkbox" id="use-card" />
+                <span>Use stored-value card</span>
+              </label>
+              <label>
+                Starting balance
+                <input type="number" id="start-balance" min="0" step="0.01" value="0" disabled />
+              </label>
+            </div>
+
+            <div class="ride-builder">
+              <div class="ride-header">
+                <h3>Ride Builder</h3>
+                <button type="button" class="ghost" id="add-ride">Add ride</button>
+              </div>
+              <div id="ride-list" class="ride-list"></div>
+              <div class="ride-actions">
+                <button type="button" id="add-transfer" class="ghost" disabled>Add transfer ride</button>
+                <span id="transfer-note" class="transfer-note">No transfer available yet.</span>
+              </div>
+              <div class="transfer-banner" id="transfer-banner">
+                <strong>Transfer ready</strong>
+                <span id="transfer-banner-text">Select the next ride to continue.</span>
+              </div>
+            </div>
+
+            <button type="submit" class="primary">Save Trip</button>
+            <div class="row">
+              <button type="button" class="ghost" id="download-receipt" disabled>Download receipt</button>
+              <button type="button" class="ghost" id="export-csv">Export CSV</button>
+            </div>
+            <p id="form-error" class="error"></p>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Trip Receipt</h2>
+          <div class="receipt" id="receipt">
+            <p class="empty">No trip saved yet.</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Daily Summary</h2>
+          <div id="summary" class="summary"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Fare Rules Editor</h2>
+          <form id="fare-form" class="form">
+            <div class="fare-grid">
+              <div>
+                <h3>LRT-1</h3>
+                <label>Short max<input type="number" id="lrt1-short-max" /></label>
+                <label>Medium max<input type="number" id="lrt1-medium-max" /></label>
+                <label>Short fare<input type="number" id="lrt1-short-fare" step="0.01" /></label>
+                <label>Medium fare<input type="number" id="lrt1-medium-fare" step="0.01" /></label>
+                <label>Long fare<input type="number" id="lrt1-long-fare" step="0.01" /></label>
+              </div>
+              <div>
+                <h3>LRT-2</h3>
+                <label>Short max<input type="number" id="lrt2-short-max" /></label>
+                <label>Medium max<input type="number" id="lrt2-medium-max" /></label>
+                <label>Short fare<input type="number" id="lrt2-short-fare" step="0.01" /></label>
+                <label>Medium fare<input type="number" id="lrt2-medium-fare" step="0.01" /></label>
+                <label>Long fare<input type="number" id="lrt2-long-fare" step="0.01" /></label>
+              </div>
+              <div>
+                <h3>MRT-3</h3>
+                <label>Range 1 max<input type="number" id="mrt3-range1" /></label>
+                <label>Range 2 max<input type="number" id="mrt3-range2" /></label>
+                <label>Range 3 max<input type="number" id="mrt3-range3" /></label>
+                <label>Range 4 max<input type="number" id="mrt3-range4" /></label>
+                <label>Range 5 max<input type="number" id="mrt3-range5" /></label>
+                <label>Fare 1<input type="number" id="mrt3-fare1" step="0.01" /></label>
+                <label>Fare 2<input type="number" id="mrt3-fare2" step="0.01" /></label>
+                <label>Fare 3<input type="number" id="mrt3-fare3" step="0.01" /></label>
+                <label>Fare 4<input type="number" id="mrt3-fare4" step="0.01" /></label>
+                <label>Fare 5<input type="number" id="mrt3-fare5" step="0.01" /></label>
+              </div>
+            </div>
+            <button type="submit" class="ghost">Save fare rules</button>
+            <p id="fare-message" class="error"></p>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Recent Trips</h2>
+          <div id="trip-feed" class="trip-feed"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

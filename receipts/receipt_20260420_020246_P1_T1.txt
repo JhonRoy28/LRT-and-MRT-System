@@ -1,0 +1,16 @@
+Train Fare Receipt
+Passenger: w
+Trip: 1
+
+Ride | Line  | Discount           | Base Fare | Final Fare | Detail
+-----+-------+--------------------+-----------+-----------+-------------------------
+   1 | LRT-1 | None               | Php  15.00 | Php  15.00 | Carriedo -> Doroteo Jose (1 gaps)
+   2 | LRT-2 | None               | Php  20.00 | Php  20.00 | Recto -> Cubao (7 gaps)
+
+Trip total before discounts: Php 35.00
+Trip total after discounts: Php 35.00
+Trip discount: Php 0.00
+
+Card starting balance: Php 550.00
+Card ending balance:   Php 515.00
+Total top-up:          Php 0.00

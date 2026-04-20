@@ -1,0 +1,12 @@
+{
+  "name": "train-fare-web",
+  "version": "1.0.0",
+  "description": "Train fare web app (LRT-1, LRT-2, MRT-3)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
